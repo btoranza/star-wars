@@ -1,0 +1,5 @@
+<div class="films">
+  <div *ngFor="let film of allFilms | async">
+    <app-film-item [film]="film"></app-film-item>
+  </div>
+</div>

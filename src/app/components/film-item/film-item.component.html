@@ -1,0 +1,16 @@
+<mat-card class="filmItem">
+  <mat-card-title
+    class="filmItem-title"
+    (click)="this.appSvc.openDialog(film.opening_crawl)"
+    >{{ film.title }}</mat-card-title
+  >
+  <mat-card-content>
+    <p><strong>Episode: </strong>{{ film.episode_id }}</p>
+    <p><strong>Director: </strong> {{ film.director }}</p>
+    <p>
+      <button mat-raised-button color="primary" [routerLink]="['/characters']">
+        See film characters
+      </button>
+    </p>
+  </mat-card-content>
+</mat-card>

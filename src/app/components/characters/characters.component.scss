@@ -1,0 +1,35 @@
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  padding-left: 20px;
+
+  &-input {
+    margin-left: 10px;
+    margin-top: 21px;
+  }
+
+  &-checkbox {
+    margin-left: 10px;
+  }
+
+  &-button {
+    margin-left: 30px;
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &-paginator {
+    position: fixed;
+    bottom: 0px;
+    right: 18px;
+  }
+}

@@ -1,0 +1,13 @@
+<mat-card class="filmItem">
+  <mat-card-title>{{ character.name }}</mat-card-title>
+  <mat-card-content>
+    <p><strong>Eye Color:</strong> {{ character.eye_color }}</p>
+    <p><strong>Gender:</strong> {{ character.gender }}</p>
+    <strong>Films:</strong>
+    <p class="filmItem-links" *ngFor="let film of this.films">
+      <span (click)="this.openDialogFilm(film)">{{
+        (film | async)?.title
+      }}</span>
+    </p>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,14 @@
+<div class="characters">
+  <p *ngFor="let character of allCharacters | async">
+    <app-character-item [character]="character"></app-character-item>
+  </p>
+  <div class="characters-paginator">
+    <mat-paginator
+      (page)="handlePageEvent($event)"
+      [length]="100"
+      [pageSize]="10"
+      aria-label="Select page"
+    >
+    </mat-paginator>
+  </div>
+</div>
